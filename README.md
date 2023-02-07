@@ -9,14 +9,17 @@ Archivos de condiciones iniciales para llevar a cabo la simulación en Geoclaw:
   - dtopo_ : archivo de condiciones iniciales correspondiente a la fuente
   - Modelo 1 y batimetría: representan los modelos batimétricos correspondientes a los casos 1 y 2.
 
-#Ecuaciones Integrales:
+Ecuaciones Integrales:
+
   main: EcIntegrales
+  
         - Se elige el modelo a sobre el que se aplicará el método y los puntos de observación en superficie.
         - Se elige cómo se presentan las condiciones (0-Imagenes, 1-condición P=0, 2-condición de Gravedad)
         -Se elige la fuente tsunamigénica (1-Desplazamiento horizontal, 2-Desplazamiento vertical unitario, 3- Desplazamiento vertical con método de Okada)
         - De elegir el desplazamiento horizontal como fuente, se da la opción de obtener las presiones en el contacto lateral o los desplazamientos en superficie.
         
   Funciones:
+  
         - refine_boundarymesh: se crea refinamiento en el modelo batimétrico, considerando si se usa el método de imágenes o las condiciones en superficie.
         - build_image: se construye la imágen del modelo en el caso de usar ese método.
         -build_solve_ie: se construye y resuelve el sistema de ecuaciones considerando el método elegido (imágenes, P=0 o condición de gravedad)
@@ -24,5 +27,6 @@ Archivos de condiciones iniciales para llevar a cabo la simulación en Geoclaw:
         - Westergaard: Se calcula presión sobre pared lateral del modelo con ayuda de un método analítico.
         
   Archivos de texto:
+  
         - DespVertical.txt: Contiene el desplazamiento vertical obtenido con el modelo de okada dada una falla previamente definida. Este resultado se obtuvo con la función de Okada del software Geoclaw.
   
