@@ -30,6 +30,3 @@ Ecuaciones Integrales:
   
         - DespVertical.txt: Contiene el desplazamiento vertical obtenido con el modelo de okada dada una falla previamente definida. Este resultado se obtuvo con la función de Okada del software Geoclaw.
   
-Archivos .mat:
-
-        - Contienen los resultados de la aplicación del método de ecuaciones integrales para el cálculo de presiones sobre una pared vertical, bajo tres consideraciones de aplicación de condiciones iniciales.
